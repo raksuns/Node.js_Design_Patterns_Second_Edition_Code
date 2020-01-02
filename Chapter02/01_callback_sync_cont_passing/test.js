@@ -1,11 +1,11 @@
 "use strict";
 
 function add(a, b) {
-  return a + b;
+	return a + b;
 }
 
 function add(a, b, callback) {
-  callback(a + b);
+	callback(a + b);
 }
 
 console.log('before');

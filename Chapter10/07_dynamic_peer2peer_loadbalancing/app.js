@@ -9,9 +9,10 @@ console.log(ports.registerMeta(serviceType));
 process.exit(0);
 
 http.createServer((req, res) => {
-  for (let i = 1e7; i > 0; i--) {}
-  console.log(`Handling request from ${pid}`);
-  res.end(`${serviceType} response from ${pid}\n`);
+	for (let i = 1e7; i > 0; i--) {
+	}
+	console.log(`Handling request from ${pid}`);
+	res.end(`${serviceType} response from ${pid}\n`);
 }).listen(ports.register(serviceType), () => {
-  console.log(`Started ${pid}`);
+	console.log(`Started ${pid}`);
 });

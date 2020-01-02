@@ -1,7 +1,7 @@
 "use strict";
 
 function additionAsync(a, b, callback) {
-  setTimeout(() => callback(a + b), 100);
+	setTimeout(() => callback(a + b), 100);
 }
 
 console.log('before');

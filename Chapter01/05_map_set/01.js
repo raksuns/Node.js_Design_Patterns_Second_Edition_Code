@@ -13,5 +13,5 @@ profiles.delete('facebook');
 profiles.has('facebook'); // false
 profiles.get('facebook'); // undefined
 for (let entry of profiles) {
-  console.log(entry);
+	console.log(entry);
 }

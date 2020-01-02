@@ -1,18 +1,18 @@
 "use strict";
 
 let person = {
-  name : 'George',
-  surname : 'Boole',
+	name: 'George',
+	surname: 'Boole',
 
-  get fullname () {
-    return this.name + ' ' + this.surname;
-  },
+	get fullname() {
+		return this.name + ' ' + this.surname;
+	},
 
-  set fullname (fullname) {
-    let parts = fullname.split(' ');
-    this.name = parts[0];
-    this.surname = parts[1];
-  }
+	set fullname(fullname) {
+		let parts = fullname.split(' ');
+		this.name = parts[0];
+		this.surname = parts[1];
+	}
 };
 
 console.log(person.fullname); // "George Boole"

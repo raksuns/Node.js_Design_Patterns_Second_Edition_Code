@@ -1,18 +1,18 @@
 "use strict";
 
 function decorate(component) {
-  // attaches a new method to the object
-  component.greetings = function() {
-    return 'Hi!';
-  };
-  
-  return component;
+	// attaches a new method to the object
+	component.greetings = function () {
+		return 'Hi!';
+	};
+
+	return component;
 }
 
 class Greeter {
-  hello(subject) {
-    return `Hello ${subject}`;
-  }
+	hello(subject) {
+		return `Hello ${subject}`;
+	}
 }
 
 const decoratedGreeter = decorate(new Greeter());

@@ -26,5 +26,5 @@ app.get('/checkToken', authController.checkToken);
 
 app.use(errorHandler());
 http.createServer(app).listen(3000, () => {
-  console.log('Express server started');
+	console.log('Express server started');
 });

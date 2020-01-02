@@ -5,5 +5,6 @@ const ReactDOM = require('react-dom');
 const JoyceBooks = require('./joyceBooks');
 
 window.onload = () => {
-  ReactDOM.render(<JoyceBooks/>, document.getElementById('main'))
+	ReactDOM.render( < JoyceBooks / >, document.getElementById('main')
+)
 };

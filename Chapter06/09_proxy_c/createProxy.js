@@ -1,10 +1,10 @@
 "use strict";
 
 function createProxy(subject) {
-  const helloOrig = subject.hello;
-  subject.hello = () => (helloOrig.call(this) + ' world!');
+	const helloOrig = subject.hello;
+	subject.hello = () => (helloOrig.call(this) + ' world!');
 
-  return subject;
+	return subject;
 }
 
 

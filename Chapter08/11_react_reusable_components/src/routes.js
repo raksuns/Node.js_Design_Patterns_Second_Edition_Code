@@ -9,15 +9,20 @@ const AuthorPage = require('./components/authorPage');
 const NotFound = require('./components/notFound');
 
 const routesConfig = [
-  {path: '/', component: AuthorsIndex},
-  {path: '/author/:id', component: AuthorPage},
-  {path: '*', component: NotFound}
+	{ path: '/', component: AuthorsIndex },
+	{ path: '/author/:id', component: AuthorPage },
+	{ path: '*', component: NotFound }
 ];
 
 class Routes extends React.Component {
-  render() {
-    return <Router history={hashHistory} routes={routesConfig}/>;
-  }
+	render() {
+		return
+	<
+		Router
+		history = { hashHistory }
+		routes = { routesConfig }
+		/>;
+	}
 }
 
 module.exports = Routes;

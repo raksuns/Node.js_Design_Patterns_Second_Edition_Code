@@ -12,17 +12,17 @@ ventilator.bindSync("tcp://*:5016");
 
 let batch = [];
 variationsStream(alphabet, maxLength)
-  .on('data', combination => {
-    batch.push(combination);
-    if (batch.length === batchSize) {  // [2]
-      const msg = {searchHash: searchHash, variations: batch};
-      ventilator.send(JSON.stringify(msg));
-      batch = [];
-    }
-  })
-  .on('end', () => {
-    //send remaining combinations
-    const msg = {searchHash: searchHash, variations: batch};
-    ventilator.send(JSON.stringify(msg));
-  })
+	.on('data', combination => {
+		batch.push(combination);
+		if (batch.length === batchSize) {  // [2]
+			const msg = { searchHash: searchHash, variations: batch };
+			ventilator.send(JSON.stringify(msg));
+			batch = [];
+		}
+	})
+	.on('end', () => {
+		//send remaining combinations
+		const msg = { searchHash: searchHash, variations: batch };
+		ventilator.send(JSON.stringify(msg));
+	})
 ;

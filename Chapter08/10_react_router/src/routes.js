@@ -11,16 +11,29 @@ const WellsBooks = require('./components/wellsBooks');
 const NotFound = require('./components/notFound');
 
 class Routes extends React.Component {
-  render() {
-    return (
-      <Router history={hashHistory}>
-        <Route path="/" component={AuthorsIndex}/>
-        <Route path="/author/joyce" component={JoyceBooks}/>
-        <Route path="/author/h-g-wells" component={WellsBooks}/>
-        <Route path="*" component={NotFound} />
-      </Router>
-    )
-  }
+	render() {
+		return (
+			< Router
+		history = { hashHistory } >
+			< Route
+		path = "/"
+		component = { AuthorsIndex }
+		/>
+		< Route
+		path = "/author/joyce"
+		component = { JoyceBooks }
+		/>
+		< Route
+		path = "/author/h-g-wells"
+		component = { WellsBooks }
+		/>
+		< Route
+		path = "*"
+		component = { NotFound }
+		/>
+		< /Router>
+	)
+	}
 }
 
 module.exports = Routes;

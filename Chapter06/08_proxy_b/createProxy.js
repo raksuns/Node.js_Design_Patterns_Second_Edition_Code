@@ -1,13 +1,13 @@
 "use strict";
 
 function createProxy(subject) {
-  return {
-    //proxied method
-    hello: () => (subject.hello() + ' world!'),
+	return {
+		//proxied method
+		hello: () => (subject.hello() + ' world!'),
 
-    //delegated method
-    goodbye: () => (subject.goodbye.apply(subject, arguments))
-  };
+		//delegated method
+		goodbye: () => (subject.goodbye.apply(subject, arguments))
+	};
 }
 
 module.exports = createProxy;

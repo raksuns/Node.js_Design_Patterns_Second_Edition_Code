@@ -3,16 +3,16 @@
 const request = require('request');
 
 function getPageHtml(url) {
-  return new Promise((resolve, reject) => {
-    request(url, (error, response, body) => {
-      resolve(body);
-    });
-  });
+	return new Promise((resolve, reject) => {
+		request(url, (error, response, body) => {
+			resolve(body);
+		});
+	});
 }
 
 async function main() {
-  const html = await getPageHtml('http://google.com');
-  console.log(html);
+	const html = await getPageHtml('http://google.com');
+	console.log(html);
 }
 
 main();

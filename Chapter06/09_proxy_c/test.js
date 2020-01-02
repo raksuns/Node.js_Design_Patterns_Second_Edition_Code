@@ -3,13 +3,13 @@
 const createProxy = require('./createProxy');
 
 class Greeter {
-  hello() {
-    return 'Hello';
-  }
+	hello() {
+		return 'Hello';
+	}
 
-  goodbye() {
-    return 'Goodbye';
-  }
+	goodbye() {
+		return 'Goodbye';
+	}
 }
 
 const greeter = new Greeter();

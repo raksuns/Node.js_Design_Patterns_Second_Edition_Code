@@ -1,8 +1,8 @@
 "use strict";
 
 function* twoWayGenerator() {
-  let what = yield null;
-  console.log('Hello ' + what);
+	let what = yield null;
+	console.log('Hello ' + what);
 }
 
 let twoWay = twoWayGenerator();
